@@ -1971,6 +1971,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["front", "workspace:packages/front"],\
             ["@monorepo/common", "workspace:packages/common"],\
+            ["@monorepo/styles", "workspace:packages/styles"],\
             ["@types/react", "npm:18.2.21"],\
             ["@types/react-dom", "npm:18.2.7"],\
             ["@typescript-eslint/eslint-plugin", "virtual:4f72ecec8ccd6075255530a21f87d2eaa1b4d665c97e02bec7797e7f8f6c377f552a2fd4ef370a4faf6004a239c51affe70f3301701d3693184e066368ade02c#npm:6.5.0"],\

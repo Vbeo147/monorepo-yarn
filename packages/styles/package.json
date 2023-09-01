@@ -2,7 +2,7 @@
   "name": "@monorepo/styles",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "index.css",
   "license": "ISC",
   "packageManager": "yarn@3.6.3"
 }

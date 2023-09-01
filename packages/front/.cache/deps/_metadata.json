@@ -1,0 +1,29 @@
+{
+  "hash": "168af560",
+  "browserHash": "af015469",
+  "optimized": {
+    "react": {
+      "src": "../../../../.yarn/cache/react-npm-18.2.0-1eae08fee2-88e38092da.zip/node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "c960c822",
+      "needsInterop": true
+    },
+    "react/jsx-dev-runtime": {
+      "src": "../../../../.yarn/cache/react-npm-18.2.0-1eae08fee2-88e38092da.zip/node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "d45bb16e",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../../../.yarn/__virtual__/react-dom-virtual-09dd09cc75/0/cache/react-dom-npm-18.2.0-dd675bca1c-7d323310be.zip/node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "154675bf",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-LROXXLV6": {
+      "file": "chunk-LROXXLV6.js"
+    }
+  }
+}

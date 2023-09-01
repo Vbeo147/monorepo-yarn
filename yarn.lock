@@ -559,7 +559,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@monorepo/styles@workspace:packages/styles":
+"@monorepo/styles@*, @monorepo/styles@workspace:packages/styles":
   version: 0.0.0-use.local
   resolution: "@monorepo/styles@workspace:packages/styles"
   languageName: unknown
@@ -1561,6 +1561,7 @@ __metadata:
   resolution: "front@workspace:packages/front"
   dependencies:
     "@monorepo/common": "*"
+    "@monorepo/styles": "*"
     "@types/react": ^18.2.15
     "@types/react-dom": ^18.2.7
     "@typescript-eslint/eslint-plugin": ^6.0.0
