@@ -37,6 +37,6 @@
 > </code>
 >  을 입력한다. 그러면 아래와 같이 package.json 파일이 하나 생성된다.
 > <br />
-> <img src="/img/code1.png" width="200px" height="100px" />
+> <img src="/img/code1.png" width="400px" height="200px" />
 
  <br />
