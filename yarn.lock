@@ -553,6 +553,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@main/front@workspace:packages/front":
+  version: 0.0.0-use.local
+  resolution: "@main/front@workspace:packages/front"
+  dependencies:
+    "@monorepo/common": "*"
+    "@monorepo/styles": "*"
+    "@types/react": ^18.2.15
+    "@types/react-dom": ^18.2.7
+    "@typescript-eslint/eslint-plugin": ^6.0.0
+    "@typescript-eslint/parser": ^6.0.0
+    "@vitejs/plugin-react": ^4.0.3
+    eslint: ^8.45.0
+    eslint-plugin-react-hooks: ^4.6.0
+    eslint-plugin-react-refresh: ^0.4.3
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    typescript: ^5.0.2
+    vite: ^4.4.5
+  languageName: unknown
+  linkType: soft
+
 "@monorepo/common@*, @monorepo/common@workspace:packages/common":
   version: 0.0.0-use.local
   resolution: "@monorepo/common@workspace:packages/common"
@@ -1555,27 +1576,6 @@ __metadata:
   checksum: 139d270bc82dc9e6f8bc045fe2aae4001dc2472157044fdfad376d0a3457f77857fa883c1c8b21b491c6caade9a926a4bed3d3d2e8d3c9202b151a4cbbd0bcd5
   languageName: node
   linkType: hard
-
-"front@workspace:packages/front":
-  version: 0.0.0-use.local
-  resolution: "front@workspace:packages/front"
-  dependencies:
-    "@monorepo/common": "*"
-    "@monorepo/styles": "*"
-    "@types/react": ^18.2.15
-    "@types/react-dom": ^18.2.7
-    "@typescript-eslint/eslint-plugin": ^6.0.0
-    "@typescript-eslint/parser": ^6.0.0
-    "@vitejs/plugin-react": ^4.0.3
-    eslint: ^8.45.0
-    eslint-plugin-react-hooks: ^4.6.0
-    eslint-plugin-react-refresh: ^0.4.3
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    typescript: ^5.0.2
-    vite: ^4.4.5
-  languageName: unknown
-  linkType: soft
 
 "fs-minipass@npm:^2.0.0":
   version: 2.1.0

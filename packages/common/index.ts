@@ -1,2 +1,1 @@
-const str: string = "Test!";
-export default str;
+export const str: string = "Hello World";

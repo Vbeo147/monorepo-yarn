@@ -9,6 +9,11 @@
       "packages/*"
     ]
   },
+  "scripts": {
+    "dev": "yarn workspace @main/front vite",
+    "build": "yarn workspace @main/front tsc && vite build",
+    "preview": "yarn workspace @main/front vite preview"
+  },
   "devDependencies": {
     "eslint": "^8.48.0",
     "prettier": "^3.0.3",
