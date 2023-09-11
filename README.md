@@ -31,11 +31,8 @@
 > ## Yarn 프로젝트 구성
 >
 > <br />
-> 터미널에서 
-> <code>
-> yarn init -y
-> </code>
->  을 입력한다. 그러면 아래와 같이 package.json 파일이 하나 생성된다.
+> 터미널에서 <code>yarn init -y</code>을 입력한다. 
+> 그러면 아래와 같이 package.json 파일이 하나 생성된다.
 
 <br />
 
