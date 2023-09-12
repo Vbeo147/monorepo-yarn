@@ -31,8 +31,15 @@
 > ## Yarn 프로젝트 구성
 >
 > <br />
-> 터미널에서 ```yarn init -y```를 입력한다.
-> 그러면 아래와 같이 package.json 파일이 하나 생성된다.
+> 터미널에서 <code>yarn init -y</code>를 입력하면
+> package.json 파일이 하나 생성될 것이다.
+> <code>
 
-<br />
- <br />
+    {
+    "name": "monorepo-yarn",
+    "version": "1.0.0",
+    "license": "MIT",
+    "packageManager": "yarn@3.6.3",
+    }
+
+</code>
