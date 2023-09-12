@@ -72,10 +72,10 @@
 
 ```
     {
-        "name": {해당 workspace 이름},
+        "name": {workspace 이름},
         "version": "1.0.0",
         "description": "",
-        "main": {해당 workspace의 시작점이 되는 모듈},
+        "main": {workspace의 시작점이 되는 모듈},
         "license": "ISC",
         "packageManager": "yarn@3.6.3"
     }
@@ -98,3 +98,31 @@
 > <hr />
 >
 > <img src="./img/cap2.png" />
+
+<br />
+
+# 특정 workspace에 모듈 추가하는 법
+
+```
+yarn workspace {workspace 이름} add {설치할 모듈}
+```
+
+<br />
+
+# workspace 간 참조하는 법
+
+추가할 workspace의 이름을 package json의 종속성 키에 추가하고 터미널에서 <code>yarn install</code>을 입력하면 참조가 가능하다.
+
+```
+"dependencies": {
+    {참조할 workspace 이름}: "*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+```
+
+그리고 아래와 같은 방식으로 workspace의 특정 모듈을 불러올 수 있다.
+
+```
+import 가져올 모듈 from "@monorepo/common/index";
+```
