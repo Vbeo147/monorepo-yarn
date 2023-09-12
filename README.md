@@ -34,13 +34,13 @@
 > 터미널에서 <code>yarn init -y</code>를 입력하면
 > package.json 파일이 하나 생성될 것이다.
 
-<code>
+```
 
-    {
-    "name": "monorepo-yarn",
-    "version": "1.0.0",
-    "license": "MIT",
-    "packageManager": "yarn@3.6.3",
-    }
+      {
+      "name": "monorepo-yarn",
+      "version": "1.0.0",
+      "license": "MIT",
+      "packageManager": "yarn@3.6.3",
+      }
 
-</code>
+```
