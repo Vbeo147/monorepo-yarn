@@ -30,17 +30,71 @@
 
 > ## Yarn 프로젝트 구성
 >
-> <br />
-> 터미널에서 <code>yarn init -y</code>를 입력하면
-> package.json 파일이 하나 생성될 것이다.
+> 터미널에 <code>yarn init -y</code>를 입력하면 package.json 파일이 하나 생성될 것이다. 그리고 아래와 같이 private 키를 추가해준다. main 키는 지워줘도 무방하다.
 
 ```
-
-      {
+  {
       "name": "monorepo-yarn",
+      "main": "index.js",
       "version": "1.0.0",
+      "private": "true",
       "license": "MIT",
       "packageManager": "yarn@3.6.3",
-      }
+  }
+```
+
+> 그리고 yarn berry를 사용하기 위해 <code>yarn set version berry</code>를 입력하여 설정한다. 그리고 yarn berry에서 가장 핵심이라고 할 수 있는 pnp 설정을 해준다. <code>nodeLinker: pnp</code>
+>
+> <br />
+>
+> 그런다음 터미널에 <code>yarn install</code>을 입력하여 yarn berry 기본셋팅을 한다. 그런다음 아래와 같이 workspaces 키의 packages를 설정하여 packages 폴더안에 있는 모든 폴더가 worspace에 속하게 된다.
 
 ```
+    {
+      "name": "monorepo-yarn",
+      "version": "1.0.0",
+      "private": "true",
+      "license": "MIT",
+      "packageManager": "yarn@3.6.3",
+      "workspaces": {
+        "packages": [
+          "packages/*"
+        ]
+      }
+    }
+```
+
+> 그리고 터미널에 <code>mkdir packages/common, packages styles</code>를 입력하여 packages 폴더에 common, styles라는 workspace를 만들기 위한 폴더를 생성해준다.
+>
+> <br />
+>
+> 그런다음 터미널로 각 workspace 폴더의 dir로 들어가서 <code>yarn init</code>을 입력해준후 아래와 같이 package.json을 수정해준다.
+
+```
+    {
+        "name": {해당 workspace 이름},
+        "version": "1.0.0",
+        "description": "",
+        "main": {해당 workspace의 시작점이 되는 모듈},
+        "license": "ISC",
+        "packageManager": "yarn@3.6.3"
+    }
+```
+
+> 그리고 packages 폴더에 있는 모든 workspace의 모듈을 설치하고 관리할 코드 베이스가 완성됐다. 이제 메인 프로젝트를 위한 폴더를 만들기 위해 packages dir에 들어가서 터미널에 <code>yarn create vite front</code>를 입력하여 폴더를 생성해주면 yarn berry monorepo의 기본 셋팅이 끝난다.
+>
+> <br />
+>
+> 기본 셋팅이 끝났으니 front 폴더의 dir로 들어가서 <code>yarn install</code>을 입력해 준다. 그러면 front 폴더에 있는 package json에 있는 종속성 키에 포함된 모든 모듈들이 코드 베이스의 .yarn 폴더에 설치될 것이다.
+>
+> <br />
+>
+> 만약 Typescript를 사용한다면 App.tsx폴더에 들어가면 빨간줄로 도배가 될 수 있다. root dir의 터미널에서<code>yarn add typescript --dev</code>을 입력하여 typescript 설치한 후 <code>yarn dlx @yarnpkg/sdks vscode</code>를 입력한다. 그리고 아래 사진과 같이 Select Version을 클릭하고 Use Workspace Version을 선택하면 해결될 것이다.
+>
+> <hr />
+>
+> <img src="./img/cap1.png" />
+>
+> <hr />
+>
+> <img src="./img/cap2.png" />
